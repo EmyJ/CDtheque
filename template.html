@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mini projet Equipe de personnes</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+	<script src="../facture/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+	<link href="select2.min.css" rel="stylesheet" />
+	<script src="select2.min.js"></script>
+	
+
+</head>
+	<body>
+	
+		<div class="container">
+
+		<div class="jumbotron">
+  			<div class="container text-center">
+    			<h1>Gestionnaire de CD</h1>
+  			</div>
+		</div>
+			
+			<div class="row" id="tableau">
+				<div class="col-md-8">
+				<div class="divCd">
+					<b>Titre du CD : </b>
+					<input class="form-control" type="text" id="cdName" >
+					<br>
+					<a class="btn btn-success" 
+								id="btnAddCD" role="button">
+								<span class="glyphicon glyphicon-plus"></span>
+								Ajouter un CD
+							</a>
+                    <span id="spinner">
+								<img src="spinner.gif">
+							</span>
+
+				</div>
+				<p id="demo"></p>
+				</div>
+				<div class="col-md-3">
+				<div class="divCateg">
+					<b>Categorie : </b></td>
+							<input class="form-control" type="text" id="categNom" />
+						<br>
+							<a class="btn btn-success" 
+								id="btnAddCateg" role="button">
+								<span class="glyphicon glyphicon-plus"></span>
+								Ajouter une Category
+							</a>
+						
+				
+				</div>	
+				<div id="categ"></div>
+				</div>
+			</div>
+			<!--<div class"col-md-8>
+					<button type="button" class="btn btn-primary" id="export"> Exporter en fichier JSON</button>
+				</div>-->
+		</div>
+	<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
